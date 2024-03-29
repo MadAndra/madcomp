@@ -69,6 +69,14 @@ function highlightActiveLink() {
     });
 }
 
+// fungsi send email
+function displayEmail() {
+    var user = "madcompsrt";
+    var domain = "gmail.com";
+    var emailAddress = user + "@" + domain;
+    window.location.href = "mailto:" + emailAddress;
+}
+
 // Panggil fungsi saat halaman dimuat dan saat jendela digulir
 window.addEventListener('load', highlightActiveLink);
 window.addEventListener('scroll', highlightActiveLink);
